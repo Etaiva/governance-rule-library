@@ -16,9 +16,9 @@ Each rule is structured for clarity, traceability, and integration with policy e
 /docs/ – Stakeholder-facing summaries and onboarding guides
 
 ✅ Recommended Machine-Readable Policies & Controls
-Below is a starter list of governance rules to include in your first submission. Each item should be structured as a standalone file with metadata, conditions, and mapped controls.
+Below is a starter list of governance rules for the initial submission. 
 
-yaml
+- yaml
 - DataRetentionPolicy
 - AccessControlPolicy
 - IncidentReportingProtocol
@@ -39,6 +39,7 @@ yaml
 - GovernanceMetricOverlay
 - ComplianceAutomationTrigger
 - LegalClauseMappingRule
+
 🧭 Usage
 These rules are designed to be:
 
