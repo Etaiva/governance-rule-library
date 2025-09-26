@@ -19,3 +19,48 @@ escalation_path:
 stakeholder_visibility: public
 status: active
 last_updated: 2025-09-26
+
+rule_id: GRL-002
+title: Access Control Policy
+description: Governs who can access systems, data, and documents based on role and risk level.
+trigger: User onboarding, role change, or system access request
+conditions:
+  - role: Board Member
+    access_level: strategic
+  - role: SME Staff
+    access_level: operational
+control_mapping:
+  - NIST: AC-2
+  - POPIA: Section 19
+  - Azure AD: Conditional Access Policy
+escalation_path:
+  - role: IT Security Lead
+  - role: Governance Architect
+stakeholder_visibility: internal
+status: active
+last_updated: 2025-09-26
+
+rule_id: GRL-003
+title: Incident Reporting Protocol
+description: Outlines the steps for reporting, escalating, and resolving governance or security incidents.
+trigger: Detection of breach, anomaly, or stakeholder concern
+conditions:
+  - severity: high
+    response_time: 4 hours
+  - severity: medium
+    response_time: 24 hours
+control_mapping:
+  - ISO27035: Incident Response
+  - POPIA: Section 22
+  - Microsoft Sentinel: Alert rule
+escalation_path:
+  - role: Forensic Lead
+  - role: Legal Advisor
+  - role: Board Liaison
+stakeholder_visibility: public
+status: active
+last_updated: 2025-09-26
+
+NEXT
+perhaps ConsentManagementRule, AuditTrailIntegrityRule, and AIUsageDisclosure
+Rule—or pivot to a GitHub Actions validator, export strategy, or stakeholder onboarding guide
