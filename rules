@@ -1,3 +1,5 @@
+/rules/ – YAML/JSON files for each governance rule
+
 rule_id: GRL-001
 title: Data Retention Policy
 description: Defines how long personal and operational data must be retained before secure deletion.
