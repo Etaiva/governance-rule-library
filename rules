@@ -1,0 +1,19 @@
+rule_id: GRL-001
+title: Data Retention Policy
+description: Defines how long personal and operational data must be retained before secure deletion.
+trigger: Data creation, modification, or archival event
+conditions:
+  - data_type: personal
+    retention_period: 5 years
+  - data_type: operational
+    retention_period: 7 years
+control_mapping:
+  - ISO27001: A.8.2.3
+  - POPIA: Section 14
+  - Microsoft Purview: Retention label policy
+escalation_path:
+  - role: Compliance Officer
+  - role: Data Protection Lead
+stakeholder_visibility: public
+status: active
+last_updated: 2025-09-26
