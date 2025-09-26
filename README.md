@@ -1,5 +1,4 @@
-# governance-rule-library
-🏛️ Governance Rule Library – README
+# Governance Rule Library README
 Overview
 This repository contains a modular, machine-readable Governance Rule Library designed to support automated compliance, stakeholder onboarding, and Responsible AI deployment across SME, legal, and boardroom contexts.
 
